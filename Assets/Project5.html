@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 border="2px">Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" name="fname" id="fname" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="sname">Surname</label></td>
+            <td><input type="text" name="sname" id="sname" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="mob">Mobile Number</label></td>
+            <td><input type="tel" name="mob" id="mob" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="email" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" name="password" id="password" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpassword">Confirm Password</label></td>
+            <td>
+              <input type="password" name="cpassword" id="cpassword" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" name="dob" id="dob" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="65"
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" value="MALE" name="gender" /><span>Male</span>
+              <input type="radio" value="FEMALE" name="gender" /><span
+                >Female</span
+              >
+              <input type="radio" value="OTHERS" name="gender" /><span
+                >Others</span
+              ><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="select">Select Country</label></td>
+            <td>
+              <select name="selectcountry" id="selectcountry">
+                <option value="INDIA">INDIA</option>
+                <option value="USA" disabled>USA</option>
+                <option value="UK">UK</option></select
+              ><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="upload">Upload Picture</label></td>
+            <td><input type="file" name="upload" id="upload" /><br /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="selectcourse">Select Course</label></td>
+            <td>
+              <select name="selectcourse" id="selectcourse">
+                <option value="JAVA">Java Full STack Development</option>
+                <option value="Data">Data Analytics</option>
+                <option value="Python Developer">Python Developer</option>
+                <option value="SAP">SAP</option></select
+              ><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="delivery">Delivery Mode</label></td>
+            <td>
+              <input
+                type="radio"
+                value="ONLINE"
+                name="delivery"
+                id="'delivery"
+              /><span>Online</span>
+              <input
+                type="radio"
+                value="OFFLINE"
+                name="delivery"
+                id="delivery"
+              /><span>Offline</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="comment">Comments</label></td>
+            <td>
+              <textarea
+                name="comment"
+                id="comment"
+                name="comment"
+                rows="6"
+                cols="24"
+                placeholder="Enter any additional comments..."
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Input Types(For Teaching)</legend>
+        <table>
+          <tr>
+            <td><label for="website">Website URL</label></td>
+            <td>
+              <input
+                type="url"
+                name="website"
+                id="website"
+                placeholder="https://example.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="search">Search</label></td>
+            <td>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="60"
+                placeholder="25"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="experience">Experience Level</label></td>
+            <td>
+              <input
+                type="range"
+                name="experience"
+                id="experience"
+                min="0"
+                max="10"
+              />0-10
+            </td>
+          </tr>
+          <tr>
+            <td><label for="time">Preferred Time</label></td>
+            <td><input type="time" name="time" id="time" /></td>
+          </tr>
+          <tr>
+            <td><label for="date">Interview Date & Time</label></td>
+            <td><input type="datetime-local" name="date" id="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="month">Preferred Start Month</label></td>
+            <td><input type="month" name="month" id="month" /></td>
+          </tr>
+          <tr>
+            <td><label for="week">Preferred Week</label></td>
+            <td><input type="week" name="week" id="week" /></td>
+          </tr>
+          <tr>
+            <td><label for="color">Color</label></td>
+            <td>
+              <input type="color" name="color" id="color" value="#127482" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hidden">Hidden Field</label></td>
+            <td>
+              <input
+                type="hidden"
+                name="hidden"
+                id="hidden"
+                value="COURSE-REG-2026"
+              />(hidden: form-id="COURSE-REG-2026")
+            </td>
+          </tr>
+          <tr>
+            <td><label for="skill">Primary Skill</label></td>
+            <td>
+              <input
+                list="skills-list"
+                name="skill"
+                id="skill"
+                placeholder="Type to Search"
+              />
+            </td>
+            <datalist id="skills-list">
+              <option value="HTML"></option>
+              <option value="CSS"></option>
+              <option value="JavaScript"></option>
+              <option value="Python"></option>
+              <option value="Java"></option>
+              <option value="React"></option>
+              <option value="Node.js"></option>
+            </datalist>
+          </tr>
+          <tr>
+            <td><label for="specialization">Specialization</label></td>
+            <td>
+              <select name="specialization" id="specialization">
+                <option value="" disabled selected>-- Select--</option>
+                <optgroup label="Frontend">
+                  <option value="React">React</option>
+                  <option value="Angula">Angular</option>
+                  <option value="Vue.js">Vue.js</option>
+                </optgroup>
+                <optgroup label="Backend">
+                  <option value="Node.js">Node.js</option>
+                  <option value="Django">Django</option>
+                  <option value="SpringBoot">SpringBoot</option>
+                </optgroup>
+                <optgroup label="Database">
+                  <option value="MySQL">MySQL</option>
+                  <option value="MongoDB">Mongo DB</option>
+                  <option value="PostgreSQL">PostgreSQL</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hobbies">Hobbies</label></td>
+            <td>
+              <select name="hobbies" id="hobbies" multiple size="4">
+                <option value="Reading">Reading</option>
+                <option value="Coding">Coding</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Music">Music</option>
+                <option value="Sport">Sports</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="documents">Documents</label></td>
+            <td>
+              <input
+                type="file"
+                name="documents"
+                id="documents"
+                accept=".pdf,.doc,.docx"
+                multiple
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Important Attributes Demo</legend>
+        <table>
+          <tr>
+            <td><label for="readonly">Readonly</label></td>
+            <td>
+              <input
+                type="text"
+                name="readonly"
+                id="readonly"
+                readonly
+                value="Cannot Edit this"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="disabled">Disabled</label></td>
+            <td>
+              <input
+                type="text"
+                name="disabled"
+                id="disabled"
+                value="Disabled Field"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="autofocus">AutoFocus</label></td>
+            <td>
+              <input
+                type="text"
+                name="autofocus"
+                id="autofocus"
+                placeholder="Get focus on page load"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pattern">Pattern</label></td>
+            <td>
+              <input
+                type="text"
+                name="pattern"
+                id="pattern"
+                pattern="[A-Za-z]+"
+                title="Only letters A_Z allowed"
+                placeholder="Only A-Z"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Output Elements</legend>
+        <table>
+          <tr>
+            <td><label for="output">Output</label></td>
+            <td>
+              <output id="output" name="output">Result appears here</output>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="progress">Progress(%)</label></td>
+            <td><progress id="progress" value="70" max="100">70%</progress></td>
+          </tr>
+          <tr>
+            <td><label for="meter">Meter</label></td>
+            <td>
+              <meter
+                id="meter"
+                value="0.6"
+                max="1"
+                min="0"
+                low="0.3"
+                high="0.7"
+                optimum="0.5"
+              >
+                60%
+              </meter>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Button Types</legend>
+        <table>
+          <tr>
+            <td>Input type="submit"</td>
+            <td><input type="submit" value="Submit Form" /></td>
+          </tr>
+          <tr>
+            <td>Input type="reset"</td>
+            <td><input type="reset" value="Reset Form" /></td>
+          </tr>
+          <tr>
+            <td>Input type="button"</td>
+            <td>
+              <input
+                type="button"
+                value="Click-Me"
+                onclick="alert('Button clicked!')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Input type="image"</td>
+            <td>
+              <input
+                type="image"
+                src="https://cdn-icons-png.flaticon.com/24/1828/1828884.png"
+                alt="Submit"
+                width="24"
+                height="24"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;button&gt; element</td>
+            <td><button type="button">🎉 Button Element</button></td>
+          </tr>
+        </table>
+      </fieldset>
+      <p>
+        <input type="submit" value="📤 Submit Registration" />
+        &nbsp;&nbsp;
+        <input type="reset" value="🔄 Reset All" />
+      </p>
+    </form>
+  </body>
+</html>
