@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #141d47,
+    #291e54,
+    #421b5e,
+    #5c1264
+  );
+  color: white;
+}
+
+nav {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 64%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.nav-list {
+  color: rgb(125, 114, 211);
+  text-decoration: none;
+}
+
+.nav-li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.me {
+  width: 700px;
+}
+
+.name {
+  text-align: left;
+  padding: 50px 50px 5px 50px;
+
+  background-image: linear-gradient(
+    to right,
+    #875f95,
+    #875ea2,
+    #835eb1,
+    #7c5fc1,
+    #6f61d1
+  );
+  background-clip: text;
+  color: transparent;
+  margin-left: 70px;
+  margin-top: 120px;
+  font-size: 70px;
+}
+
+.role {
+  background-image: linear-gradient(
+    to right,
+    #b897b4,
+    #ae98b4,
+    #a498b2,
+    #9c98af,
+    #9697aa
+  );
+  background-clip: text;
+  color: transparent;
+  text-align: left;
+  padding: 5px 50px 5px 50px;
+  margin-left: 70px;
+  font-size: 40px;
+}
+
+.desc {
+  text-align: left;
+  padding: 15px 50px 15px 50px;
+  margin-left: 70px;
+  width: 50;
+  font-size: 20;
+  color: #bebfd2;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+.view {
+  padding: 8px 10px 8px 8px;
+  margin-left: 120px;
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: #bebfd2;
+  border-radius: 5px;
+}
+
+.get {
+  padding: 8px 10px 8px 8px;
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: #bebfd2;
+  border-radius: 5px;
+}
