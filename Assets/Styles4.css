@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 }
 
 nav {
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -26,28 +26,33 @@ nav {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 64%;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 20px auto;
+  padding: 14px 30px;
 }
 
-.nav-list {
-  color: rgb(125, 114, 211);
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
   text-decoration: none;
-}
-
-.nav-li {
-  display: inline;
-  margin-right: 50px;
+  color: rgb(125, 114, 211);
+  font-size: 18px;
 }
 
 .me {
-  width: 700px;
+  width: 800px;
+  margin-left: 100px auto;
 }
 
 .name {
-  text-align: left;
-  padding: 50px 50px 5px 50px;
-
+  /*text-align: left;*/
+  padding: 50px 50px 5px 150px;
   background-image: linear-gradient(
     to right,
     #875f95,
@@ -58,7 +63,6 @@ nav {
   );
   background-clip: text;
   color: transparent;
-  margin-left: 70px;
   margin-top: 120px;
   font-size: 70px;
 }
@@ -74,37 +78,145 @@ nav {
   );
   background-clip: text;
   color: transparent;
-  text-align: left;
-  padding: 5px 50px 5px 50px;
-  margin-left: 70px;
+  /*text-align: left;*/
+  padding: 5px 50px 5px 150px;
+  margin-top: 10px;
   font-size: 40px;
 }
 
 .desc {
+  width: 100%;
+  font-size: 20px;
   text-align: left;
-  padding: 15px 50px 15px 50px;
-  margin-left: 70px;
-  width: 50;
-  font-size: 20;
+  padding: 15px 50px 15px 150px;
   color: #bebfd2;
   margin-bottom: 15px;
   line-height: 1.7;
-  letter-spacing: 1px;
-}
-.view {
-  padding: 8px 10px 8px 8px;
-  margin-left: 120px;
-  margin-right: 20px;
-  text-decoration: none;
-  background-color: #bebfd2;
-  border-radius: 5px;
+  letter-spacing: 0.8px;
 }
 
+.btns {
+  margin-left: 155px;
+  margin-top: 20px;
+  /*transition: all 1s ease;*/
+}
+.view,
 .get {
-  padding: 8px 10px 8px 8px;
-  margin-left: 10px;
-  margin-right: 20px;
+  padding: 8px 14px;
+  margin-right: 15px;
   text-decoration: none;
   background-color: #bebfd2;
   border-radius: 5px;
+}
+.view:hover,
+.get:hover {
+  background-color: #5c1264;
+  color: #b495bf;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  box-shadow: 0.8px 0.8px 0.8px 0.8px #b897b4;
+}
+
+.project {
+  text-align: center;
+  padding: 20px 50px 20px 50px;
+  margin-top: 90px;
+  margin-left: auto;
+  font-size: 35px;
+  color: #ad52b7;
+}
+
+.cards-wrapper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background-image: linear-gradient(
+    to right,
+    #875f95,
+    #875ea2,
+    #835eb1,
+    #7c5fc1,
+    #6f61d1
+  );
+  border-radius: 15px;
+  margin-top: 70px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 500px;
+  transition:
+    transform 1s ease,
+    box-shadow 1s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px -30px 60px rgba(255, 255, 255, 0.3);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #500249;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e4dddd;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card-actions a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-actions a:first-child,
+.card-actions a:last-child {
+  background-image: linear-gradient(
+    to right top,
+    #2c4263,
+    #3c4980,
+    #5c4c98,
+    #8748a8,
+    #8f0584
+  );
+  color: #bbabab;
+}
+
+.git {
+  width: 18px;
+  height: 18px;
+}
+
+.cover {
+  height: 350px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
