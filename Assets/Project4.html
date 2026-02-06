@@ -10,38 +10,69 @@
     <link rel="stylesheet" href="Styles4.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <ul>
-          <li class="nav-li"><a href="#abt" class="nav-list">About Me</a></li>
-          <li class="nav-li"><a href="#pro" class="nav-list">Projects</a></li>
-          <li class="nav-li"><a href="#skill" class="nav-list">Skills</a></li>
-          <li class="nav-li"><a href="#con" class="nav-list">Contact</a></li>
-          <li class="nav-li">
-            <a href="./Trailer/Saraswathi_resume.pdf" download class="nav-list"
-              >Download Resume</a
-            >
-          </li>
+          <li class="nav-title">MY <br />PORTFOLIO</li>
+          <div class="nav-middle">
+            <li class="nav-li"><a href="#abt" class="nav-list">About Me</a></li>
+            <li class="nav-li"><a href="#pro" class="nav-list">Projects</a></li>
+            <li class="nav-li"><a href="#skill" class="nav-list">Skills</a></li>
+            <li class="nav-li"><a href="#con" class="nav-list">Contact</a></li>
+            <li class="nav-li">
+              <a
+                href="./Trailer/Saraswathi_resume.pdf"
+                download
+                class="nav-list"
+                >Download Resume</a
+              >
+            </li>
+          </div>
+          <a href="#con" class="nav-list btn-touch">Get In Touch</a>
         </ul>
       </nav>
     </header>
 
-    <div class="me" id="#abt">
-      <h1 class="name">Hi, I'm <br />G Saraswathi</h1>
+    <section class="hero" id="abt">
+      <div class="me">
+        <h1 class="name">Hi, I'm <br />G Saraswathi</h1>
 
-      <h2 class="role">Full Stack Java Developer</h2>
+        <h2 class="role">Full Stack Java Developer</h2>
 
-      <p class="desc">
-        I am passionate Full Stack Developer with expertise in both frontend and
-        backend technologies. Here is my GitHub portfolio for Open-source
-        Contributions.
-      </p>
+        <p class="desc">
+          I am passionate Full Stack Developer with expertise in both frontend
+          and backend technologies. Here is my GitHub portfolio for Open-source
+          Contributions.
+        </p>
 
-      <div class="btns">
-        <a class="view" href="#pro">View My Page</a>
-        <a class="get" href="#con">Get inTouch</a>
+        <div class="btns">
+          <a class="view" href="#pro">View My Page</a>
+          <a class="get" href="#con">Get inTouch</a>
+        </div>
       </div>
-    </div>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>
+          package com.saraswathi.portfolio;
+
+          public class Saraswathi {
+
+              public static void main(String[] args) {
+
+                 System.out.println("👋 Hi, I'm Saraswathi");
+                 System.out.println("💼 Full Stack Java Developer");
+                 System.out.println("🛠 Skills: Java, Spring Boot, MySQL");
+                 System.out.println("🌐 HTML, CSS, JavaScript, GitHub");
+              }
+            }
+          </code></pre>
+      </div>
+    </section>
 
     <div class="project"><h2 id="pro">Featured Projects</h2></div>
     <div class="cards-wrapper">
