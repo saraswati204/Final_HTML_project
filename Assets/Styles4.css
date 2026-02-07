@@ -152,15 +152,16 @@ nav ul li a {
   background-color: #8b5cf6;
   columns: white;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 .view:hover,
 .get:hover {
-  background-color: #22d3ee;
-  color: #0f172a;
-  transition-property: background-color;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  box-shadow: 0.8px 0.8px 0.8px 0.8px #b897b4;
+  background-color: transparent;
+  color: #dfe2e8;
+  border: 2px solid #7f5cff;
+  box-shadow:
+    0 0 8px #7f5cff,
+    0 0 16px #00d4ff;
 }
 
 .code-box {
@@ -260,7 +261,7 @@ nav ul li a {
 
 .card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0px -30px 60px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px -10px 40px rgba(255, 255, 255, 0.3);
 }
 
 .card h3 {
@@ -291,6 +292,16 @@ nav ul li a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-actions a:hover {
+  background-color: transparent;
+  color: #fdfdfd;
+  border: 2px solid #7f5cff;
+  box-shadow:
+    0 0 2px #7f5cff,
+    0 0 6px #00d4ff;
 }
 
 .card-actions a:first-child,
@@ -325,7 +336,12 @@ nav ul li a {
 .skills h2 {
   font-size: 35px;
   color: #c084fc;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  font-size: 16px;
+  color: #f661a1;
 }
 
 .skills-grid {
@@ -341,21 +357,23 @@ nav ul li a {
 
 .skill-box {
   position: relative;
-  background: #1e393b;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   width: 160px;
   height: 170px;
 
-  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 12px;
   transition:
-    transform 0.6s ease,
-    box-shadow 0.4s ease;
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  background: 0.35s ease;
 }
 
 .skill-box img {
@@ -375,7 +393,7 @@ nav ul li a {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 1.5px;
   background: linear-gradient(135deg, #8a7dff, #ff4fd8);
   opacity: 0;
@@ -392,7 +410,8 @@ nav ul li a {
 }
 .skill-box:hover {
   transform: translateY(-12px);
+  background-color: rgba(150, 135, 160, 0.14);
   box-shadow:
-    0 0 10px rgba(138, 125, 255, 0.55),
-    0 0 20px rgba(255, 79, 216, 0.35);
+    0 10 30px rgba(138, 125, 255, 0.55),
+    0 0 12px rgba(255, 79, 216, 0.35);
 }
